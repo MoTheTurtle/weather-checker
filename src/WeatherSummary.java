@@ -34,9 +34,14 @@ public class WeatherSummary {
         double min = Temperatures.get(0);
         double max = Temperatures.get(Temperatures.size() -1);
 
-        System.out.println("min = "+ min);
-        System.out.println("max = "+ max); 
-
+        System.out.println("Min = "+ min);
+        System.out.println("Max = "+ max); 
+        double sum = 0.0;
+        for(double t:Temperatures){
+           sum += t;
+        }
+        double average= sum/Temperatures.size();
+        System.out.println("Average = "+average); 
 
         // Implement this method!
         // Hint: use Scanner. nextDouble() and hasNextDouble() will be helpful here!
