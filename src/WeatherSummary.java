@@ -1,7 +1,4 @@
 import java.util.Scanner; 
-import java.util.List; 
-import java.util.ArrayList;
-
 public class WeatherSummary {
 
     /**
@@ -21,15 +18,14 @@ public class WeatherSummary {
      * @param args command line arguments (ignored)
      */
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in); 
+        Scanner scan = new Scanner(System.in);  
 
-        List<Double> temp = new ArrayList<>(); 
-
-        while(scan.hasNextLine()){
+        while(scan.hasNextDouble()){
             double temperature = scan.nextDouble(); 
-            temp.add(temperature);
+            System.out.println(temperature);
+            
+            
         }
-        System.out.println(temp);
 
         // Implement this method!
         // Hint: use Scanner. nextDouble() and hasNextDouble() will be helpful here!
